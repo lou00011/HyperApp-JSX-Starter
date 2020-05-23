@@ -2,9 +2,11 @@
   "name": "hyperApp_Manualis",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -p",
+    "run": ""
   },
   "keywords": [],
   "author": "",
@@ -13,6 +15,13 @@
     "hyperapp": "^2.0.4"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "html-webpack-tags-plugin": "^2.0.17",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
   }
